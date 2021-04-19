@@ -1,3 +1,2 @@
-subdir('utility')
-subdir('lib')
-subdir('app')
+subdir('AL020004')
+subdir('LX010106')
