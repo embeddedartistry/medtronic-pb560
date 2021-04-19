@@ -81,7 +81,6 @@ subdir('build/compiler/check-and-apply-flags')
 # Include reusable build modules here via subdir() calls
 subdir('build/linker/linker-script-as-property')
 subdir('build/linker/linker-map')
-subdir('build/test/cmocka')
 subdir('build/objcopy')
 
 ###############
@@ -101,15 +100,8 @@ etl_dep = etl_subproject.get_variable('etl_dep')
 
 # Add files to this variable if you want them analyzed by clang-tidy
 clangtidy_files = []
-# Add dependencies to this array for testing with Catch2
-catch2_tests_dep = []
 
 subdir('src')
-subdir('test')
-
-# Defined after src and test so catch2_dep is fully populated
-# when creating the built-in targets
-subdir('build/test/catch2')
 
 ###################
 # Tooling Modules #
