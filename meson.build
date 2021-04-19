@@ -87,13 +87,6 @@ subdir('build/objcopy')
 # Subprojects #
 ###############
 
-libmemory_subproject = subproject('libmemory')
-etl_subproject = subproject('etl')
-
-libmemory_freelist_dep = libmemory_subproject.get_variable('libmemory_freelist_dep')
-etl_dep = etl_subproject.get_variable('etl_dep')
-
-# Configure the project to include `libc` headers by default
 #######################
 # Process Source Tree #
 #######################
