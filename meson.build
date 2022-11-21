@@ -106,6 +106,11 @@ subdir('build/analysis/cppcheck')
 subdir('build/analysis/sloccount')
 subdir('build/analysis/vale')
 subdir('build/format')
+
+
+doxygen_input = [meson.source_root() / 'src']
+doxyfile_input = files(meson.source_root() / 'docs/Doxyfile.in')
+
 subdir('build/docs/doxygen')
 
 #############
