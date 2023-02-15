@@ -44,3 +44,6 @@
 *.exe
 *.out
 *.app
+
+# Various project files
+*.und
